@@ -870,6 +870,31 @@ strong { color: var(--accent); font-weight: 600; }
 }
 .footer-col a:hover { color: var(--white); }
 
+/* Redes sociales footer */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--gray-light);
+  transition: color var(--t-fast);
+}
+
+.social-btn:hover { color: var(--accent); }
+
+.social-btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 .footer-bottom {
   border-top: 1px solid var(--border);
   padding: 20px 0;
