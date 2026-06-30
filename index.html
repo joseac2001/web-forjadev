@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ForjaDev — Aplicaciones web a medida para tu negocio. Dashboards, inventario, portales de clientes y más. Tecnología templada para tu negocio.">
+  <meta property="og:title" content="ForjaDev — Tecnología templada para tu negocio">
+  <meta property="og:description" content="Aplicaciones web personalizadas que se adaptan a tu negocio, no al revés. Prototipo navegable gratis en menos de 7 días.">
+  <meta property="og:image" content="logo_forjadev.jpg">
+  <title>ForjaDev — Tecnología templada para tu negocio</title>
+  <link rel="icon" type="image/png" href="logo_forjadev.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">
+        <img src="logo_forjadev.jpg" alt="ForjaDev">
+        <span class="nav-logo-text mono">forjadev<span class="accent">.cl</span></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#precios">Precios</a>
+        <a href="#cotizar" class="btn btn-primary btn-sm">Cotizar →</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="badge mono fade-up">// forjadev.cl</span>
+          <h1 class="fade-up delay-100">
+            Forjamos soluciones<br>
+            <span class="accent">digitales</span> a medida
+          </h1>
+          <p class="hero-tagline mono fade-up delay-200">Tecnología templada para tu negocio</p>
+          <p class="hero-body fade-up delay-300">
+            ¿Tu empresa sigue usando Excel o WhatsApp para gestionar cosas que debería manejar un sistema?
+            Construimos aplicaciones web personalizadas que se adaptan a tu negocio&nbsp;— no al revés.
+          </p>
+          <div class="hero-actions fade-up delay-400">
+            <a href="#cotizar" class="btn btn-primary">Solicitar cotización</a>
+            <a href="#servicios" class="btn btn-ghost">Ver servicios ↓</a>
+          </div>
+        </div>
+        <div class="hero-logo fade-up delay-200">
+          <div class="hero-logo-glow"></div>
+          <img src="logo_forjadev.jpg" alt="ForjaDev Logo">
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span class="mono">scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROBLEMA
+    ============================================================ -->
+    <section id="problema">
+      <div class="container problema-inner">
+        <div class="code-block fade-up">
+          <div class="code-header">
+            <div class="code-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="code-filename mono">empresa.js</span>
+          </div>
+          <pre class="code-body"><code><span class="c-comment">// Estado actual de tu negocio 🤔</span>
+<span class="c-keyword">const</span> herramientas <span class="c-op">=</span> {
+  gestion:      <span class="c-string">"Excel 2013"</span>,      <span class="c-comment">// 😬</span>
+  comunicacion: <span class="c-string">"WhatsApp grupos"</span>,   <span class="c-comment">// 😬</span>
+  reportes:     <span class="c-keyword">undefined</span>,           <span class="c-comment">// 😬</span>
+  ordenes:      <span class="c-string">"papel y lápiz"</span>,    <span class="c-comment">// 😬</span>
+}
+
+<span class="c-comment">// Después de Forjadev:</span>
+<span class="c-keyword">const</span> herramientas <span class="c-op">=</span> {
+  gestion:      <span class="c-string">"sistema a medida"</span>,  <span class="c-comment">// ✓</span>
+  comunicacion: <span class="c-string">"portal de clientes"</span>, <span class="c-comment">// ✓</span>
+  reportes:     <span class="c-string">"dashboard en vivo"</span>,  <span class="c-comment">// ✓</span>
+  ordenes:      <span class="c-string">"digitalizado"</span>,       <span class="c-comment">// ✓</span>
+}</code></pre>
+        </div>
+        <div class="problema-text fade-up delay-200">
+          <span class="section-tag mono">// el problema</span>
+          <h2>Tu negocio merece herramientas a su medida</h2>
+          <p>Las soluciones genéricas te obligan a adaptar tu negocio a ellas. Nosotros hacemos lo contrario: construimos el sistema que necesitas, con las funciones que usas y nada más.</p>
+          <ul class="check-list">
+            <li>Sin plantillas ni funciones que no vas a usar</li>
+            <li>Sin pagar módulos que nunca vas a tocar</li>
+            <li>Sin adaptar tu proceso al software</li>
+            <li>Sin soporte offshore imposible de contactar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICIOS
+    ============================================================ -->
+    <section id="servicios">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag mono">// servicios</span>
+          <h2>¿Qué podemos construirte?</h2>
+          <p class="section-sub">Desde un panel de control simple hasta un sistema completo para tu operación.</p>
+        </div>
+        <div class="services-grid">
+
+          <div class="service-card fade-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="12" width="4" height="9" rx="1"/>
+                <rect x="10" y="7" width="4" height="14" rx="1"/>
+                <rect x="17" y="3" width="4" height="18" rx="1"/>
+              </svg>
+            </div>
+            <h3>Dashboard & Reportes</h3>
+            <p>Métricas clave de tu negocio en tiempo real. Ventas, clientes, rendimiento — todo en una pantalla, sin abrir Excel.</p>
+            <span class="service-tag mono">// métricas · ventas · kpis</span>
+          </div>
+
+          <div class="service-card fade-up delay-100">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/>
+                <path d="M16 3H8a2 2 0 00-2 2v2h12V5a2 2 0 00-2-2z"/>
+                <line x1="12" y1="13" x2="12" y2="17"/>
+                <line x1="10" y1="15" x2="14" y2="15"/>
+              </svg>
+            </div>
+            <h3>Control de Inventario</h3>
+            <p>Alertas automáticas de stock bajo, historial de movimientos y múltiples bodegas. Sin sorpresas de último momento.</p>
+            <span class="service-tag mono">// stock · alertas · bodegas</span>
+          </div>
+
+          <div class="service-card fade-up delay-200">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="7" r="3"/>
+                <path d="M3 21v-2a6 6 0 0112 0v2"/>
+                <path d="M16 11l2 2 4-4" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Portal de Clientes</h3>
+            <p>Tus clientes acceden con su cuenta y ven el estado de sus proyectos, facturas y documentos. Sin emails de seguimiento.</p>
+            <span class="service-tag mono">// seguimiento · acceso · docs</span>
+          </div>
+
+          <div class="service-card fade-up delay-100">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="9" y1="13" x2="15" y2="13"/>
+                <line x1="9" y1="17" x2="12" y2="17"/>
+              </svg>
+            </div>
+            <h3>Sistema de Cotizaciones</h3>
+            <p>Genera y envía cotizaciones desde el navegador. Tu proceso de ventas digitalizado, con seguimiento de estado.</p>
+            <span class="service-tag mono">// ventas · pdf · seguimiento</span>
+          </div>
+
+          <div class="service-card fade-up delay-200">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>Herramientas Internas</h3>
+            <p>¿Tienes un proceso específico que ningún software estándar cubre? Lo construimos desde cero, exactamente como lo necesitas.</p>
+            <span class="service-tag mono">// custom · interno · a medida</span>
+          </div>
+
+          <div class="service-card service-card-cta fade-up delay-300">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="16"/>
+                <line x1="8" y1="12" x2="16" y2="12"/>
+              </svg>
+            </div>
+            <h3>¿Tienes otra idea?</h3>
+            <p>Si puedes describir el problema, probablemente podemos construir la solución. Cuéntanos qué necesitas.</p>
+            <a href="#cotizar" class="btn btn-primary btn-sm" style="margin-top: 8px;">Conversemos →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESO
+    ============================================================ -->
+    <section id="proceso">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag mono">// cómo funciona</span>
+          <h2>Simple y sin sorpresas</h2>
+        </div>
+        <div class="steps">
+          <div class="step fade-up">
+            <div class="step-number mono">01</div>
+            <div class="step-body">
+              <h3>Cuéntanos tu idea</h3>
+              <p>Conversación inicial sin compromiso. Nos cuentas qué necesitas y cómo funciona tu negocio hoy. Sin propuesta ni presupuesto todavía.</p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step fade-up delay-200">
+            <div class="step-number mono">02</div>
+            <div class="step-body">
+              <h3>Mockup navegable en ≤7 días</h3>
+              <p>Construimos un prototipo funcional con tus datos de ejemplo. Lo ves en tu pantalla, lo navegas, lo muestras a tu equipo. <strong>Sin costo.</strong></p>
+            </div>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+          <div class="step fade-up delay-400">
+            <div class="step-number mono">03</div>
+            <div class="step-body">
+              <h3>Decides tú</h3>
+              <p>Si el mockup te convence, arrancamos con el desarrollo real. Si no, no pasa nada — ningún compromiso. El código del mockup se convierte en la base del sistema.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MOCKUP CTA
+    ============================================================ -->
+    <section id="mockup-cta">
+      <div class="container">
+        <div class="mockup-card fade-up">
+          <div class="mockup-card-inner">
+            <div class="mockup-text">
+              <span class="badge accent-badge mono">→ oferta de entrada</span>
+              <h2>Antes de invertir un peso,<br>ves tu sistema funcionando</h2>
+              <p>No te pedimos que confíes en una propuesta en PDF. Te mostramos el sistema navegando, con tus datos de ejemplo, antes de cerrar nada.</p>
+              <a href="#cotizar" class="btn btn-primary">Quiero mi mockup gratis →</a>
+            </div>
+            <div class="mockup-features">
+              <div class="mockup-feature">
+                <span class="feature-icon">✓</span>
+                <span>Prototipo 100% navegable</span>
+              </div>
+              <div class="mockup-feature">
+                <span class="feature-icon">✓</span>
+                <span>Con tus datos de ejemplo</span>
+              </div>
+              <div class="mockup-feature">
+                <span class="feature-icon">✓</span>
+                <span>URL pública para mostrar</span>
+              </div>
+              <div class="mockup-feature">
+                <span class="feature-icon">✓</span>
+                <span>Listo en menos de 7 días</span>
+              </div>
+              <div class="mockup-feature">
+                <span class="feature-icon feature-zero">$0</span>
+                <span>Costo: completamente gratis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRECIOS
+    ============================================================ -->
+    <section id="precios">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-tag mono">// inversión</span>
+          <h2>Precios transparentes</h2>
+          <p class="section-sub">Sin sorpresas. El valor final depende de la complejidad, pero siempre lo sabes antes de empezar.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card fade-up">
+            <div class="pricing-type mono">// setup</div>
+            <div class="pricing-amount">desde <span>$450.000</span> <em>CLP</em></div>
+            <div class="pricing-label">Pago único al inicio del proyecto</div>
+            <ul class="pricing-list">
+              <li>Desarrollo completo a medida</li>
+              <li>Diseño profesional incluido</li>
+              <li>Deploy en producción</li>
+              <li>Capacitación básica de uso</li>
+              <li>El código te pertenece</li>
+            </ul>
+          </div>
+          <div class="pricing-card pricing-card-accent fade-up delay-200">
+            <div class="pricing-type mono">// mensualidad</div>
+            <div class="pricing-amount">desde <span>$75.000</span> <em>CLP/mes</em></div>
+            <div class="pricing-label">Servicio mensual recurrente</div>
+            <ul class="pricing-list">
+              <li>Hosting y base de datos</li>
+              <li>Backups automáticos diarios</li>
+              <li>Soporte por WhatsApp</li>
+              <li>Actualizaciones menores</li>
+              <li>Monitoreo de uptime 24/7</li>
+            </ul>
+          </div>
+        </div>
+        <p class="pricing-note mono fade-up">// el valor exacto depende del alcance — el mockup es siempre gratis</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FORMULARIO DE COTIZACIÓN
+    ============================================================ -->
+    <section id="cotizar">
+      <div class="container">
+        <div class="cotizar-inner">
+          <div class="cotizar-header fade-up">
+            <span class="section-tag mono">// cotizar</span>
+            <h2>Cuéntanos tu proyecto</h2>
+            <p>Te respondemos en menos de 24 horas. Sin spam, sin compromisos.</p>
+          </div>
+
+          <!--
+            FORMULARIO — CONFIGURACIÓN REQUERIDA:
+            1. Ve a https://formspree.io y crea una cuenta gratuita
+            2. Crea un nuevo form y copia el ID (ej: "xpzgkbqr")
+            3. Reemplaza "YOUR_FORM_ID" en la línea de abajo con ese ID
+            Ejemplo: action="https://formspree.io/f/xpzgkbqr"
+          -->
+          <form id="quote-form" class="quote-form fade-up delay-200"
+                action="https://formspree.io/f/xlgywrzy" method="POST">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo <span class="req">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="juan@tuempresa.cl" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono">Teléfono <span class="opt">(opcional)</span></label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678">
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa / Negocio <span class="opt">(opcional)</span></label>
+                <input type="text" id="empresa" name="empresa" placeholder="Tu empresa S.A.">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="tipo">Tipo de proyecto <span class="req">*</span></label>
+              <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="dashboard">Dashboard y reportes</option>
+                <option value="inventario">Control de inventario</option>
+                <option value="portal">Portal de clientes</option>
+                <option value="cotizaciones">Sistema de cotizaciones</option>
+                <option value="ecommerce">Tienda o e-commerce</option>
+                <option value="agenda">Sistema de agendamiento</option>
+                <option value="interno">Herramienta interna</option>
+                <option value="otro">Otro / No estoy seguro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="descripcion">Describe tu proyecto <span class="req">*</span></label>
+              <textarea id="descripcion" name="descripcion" rows="5"
+                placeholder="Cuéntanos qué necesitas: ¿qué problema resuelve? ¿quién lo usa? ¿qué usa hoy en su lugar?" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="presupuesto">Presupuesto estimado <span class="opt">(opcional)</span></label>
+              <select id="presupuesto" name="presupuesto">
+                <option value="" disabled selected>Selecciona un rango</option>
+                <option value="menos-500k">Menos de $500.000 CLP</option>
+                <option value="500k-1500k">$500.000 – $1.500.000 CLP</option>
+                <option value="1500k-3000k">$1.500.000 – $3.000.000 CLP</option>
+                <option value="mas-3000k">Más de $3.000.000 CLP</option>
+                <option value="sin-definir">Sin definir / Necesito orientación</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+                <span class="btn-text">Enviar solicitud →</span>
+                <span class="btn-loading" hidden>Enviando...</span>
+              </button>
+            </div>
+
+            <div id="form-success" class="form-message form-success" hidden>
+              ✓ &nbsp;Mensaje recibido. Te respondemos en menos de 24 horas.
+            </div>
+            <div id="form-error" class="form-message form-error" hidden>
+              ✗ &nbsp;Hubo un error al enviar. Escríbenos directamente a
+              <a href="mailto:hola@forjadev.cl">hola@forjadev.cl</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo_forjadev.jpg" alt="ForjaDev" class="footer-logo">
+        <p class="footer-tagline mono">// Tecnología templada para tu negocio</p>
+        <p class="footer-copy">© 2026 ForjaDev. Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="mono">// navegación</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo funciona</a>
+        <a href="#precios">Precios</a>
+        <a href="#cotizar">Cotizar proyecto</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="mono">// contacto</h4>
+        <a href="mailto:hola@forjadev.cl">hola@forjadev.cl</a>
+        <a href="https://instagram.com/forjadev.cl" target="_blank" rel="noopener noreferrer">@forjadev.cl</a>
+        <a href="https://forjadev.cl">forjadev.cl</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span class="mono">Forjado con código en Chile 🇨🇱</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
