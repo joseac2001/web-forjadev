@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 *.env
+
+# Vive en su propio repo privado (ver automation/README o el remote configurado ahí)
+automation/
