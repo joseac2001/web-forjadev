@@ -4,3 +4,8 @@ Thumbs.db
 
 # Vive en su propio repo privado (ver automation/README o el remote configurado ahí)
 automation/
+
+# Tooling de skills de Claude Code / editores — no es parte del sitio
+.claude/
+.agents/
+skills-lock.json

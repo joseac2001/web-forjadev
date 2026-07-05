@@ -11,10 +11,12 @@
   <link rel="icon" type="image/png" href="logo_forjadev.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
   <!-- ============================================================
        NAVBAR
@@ -39,7 +41,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main-content">
 
     <!-- ============================================================
          HERO
@@ -197,16 +199,20 @@
           </div>
 
           <div class="service-card service-card-cta fade-up delay-300">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="8" x2="12" y2="16"/>
-                <line x1="8" y1="12" x2="16" y2="12"/>
-              </svg>
+            <div class="cta-card-text">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="16"/>
+                  <line x1="8" y1="12" x2="16" y2="12"/>
+                </svg>
+              </div>
+              <div>
+                <h3>¿Tienes otra idea?</h3>
+                <p>Si puedes describir el problema, probablemente podemos construir la solución. Cuéntanos qué necesitas.</p>
+              </div>
             </div>
-            <h3>¿Tienes otra idea?</h3>
-            <p>Si puedes describir el problema, probablemente podemos construir la solución. Cuéntanos qué necesitas.</p>
-            <a href="#cotizar" class="btn btn-primary btn-sm" style="margin-top: 8px;">Conversemos →</a>
+            <a href="#cotizar" class="btn btn-primary btn-sm cta-card-btn">Conversemos →</a>
           </div>
 
         </div>
@@ -399,10 +405,11 @@
               <label for="presupuesto">Presupuesto estimado <span class="opt">(opcional)</span></label>
               <select id="presupuesto" name="presupuesto">
                 <option value="" disabled selected>Selecciona un rango</option>
-                <option value="menos-500k">Menos de $500.000 CLP</option>
-                <option value="500k-1500k">$500.000 – $1.500.000 CLP</option>
-                <option value="1500k-3000k">$1.500.000 – $3.000.000 CLP</option>
-                <option value="mas-3000k">Más de $3.000.000 CLP</option>
+                <option value="menos-75k">Menos de $75.000 CLP</option>
+                <option value="75k-250k">$75.000 – $250.000 CLP</option>
+                <option value="250k-500k">$250.000 – $500.000 CLP</option>
+                <option value="500k-1000k">$500.000 – $1.000.000 CLP</option>
+                <option value="mas-1000k">Más de $1.000.000 CLP</option>
                 <option value="sin-definir">Sin definir / Necesito orientación</option>
               </select>
             </div>
@@ -463,8 +470,12 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container">
+      <div class="container footer-bottom-inner">
         <span class="mono">Forjado con código en Chile 🇨🇱</span>
+        <div class="footer-legal">
+          <a href="privacidad.html">Política de privacidad</a>
+          <a href="terminos.html">Términos de servicio</a>
+        </div>
       </div>
     </div>
   </footer>
