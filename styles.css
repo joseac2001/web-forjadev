@@ -30,6 +30,7 @@
   --radius:    0px;
   --radius-lg: 0px;
   --nav-h:     72px;
+  --nav-top:   20px;
 
   --ease:      cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --t-fast:    0.18s;
@@ -45,7 +46,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--nav-h);
+  scroll-padding-top: calc(var(--nav-h) + var(--nav-top) + 24px);
 }
 
 body {
@@ -257,15 +258,22 @@ strong { color: var(--accent); font-weight: 600; }
 ================================================================ */
 #navbar {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: var(--nav-top);
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
+  width: calc(100% - 40px);
+  max-width: var(--container);
   height: var(--nav-h);
-  transition: background var(--t-med), box-shadow var(--t-med);
+  background: var(--bg);
+  border: 1px solid var(--border-hover);
+  box-shadow: 6px 6px 0 var(--accent-border);
+  transition: box-shadow var(--t-fast), border-color var(--t-fast);
 }
 
 #navbar.scrolled {
-  background: var(--bg);
-  box-shadow: 0 1px 0 var(--border-hover);
+  border-color: var(--accent-border);
+  box-shadow: 4px 4px 0 var(--accent-border);
 }
 
 .nav-inner {
@@ -273,6 +281,7 @@ strong { color: var(--accent); font-weight: 600; }
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  padding: 0 20px;
 }
 
 .nav-logo {
@@ -336,7 +345,7 @@ strong { color: var(--accent); font-weight: 600; }
   min-height: 100dvh;
   display: flex;
   align-items: center;
-  padding: calc(var(--nav-h) + 56px) 0 96px;
+  padding: calc(var(--nav-h) + var(--nav-top) + 56px) 0 96px;
   overflow: hidden;
 }
 
@@ -1041,7 +1050,7 @@ strong { color: var(--accent); font-weight: 600; }
    PÁGINAS LEGALES (privacidad, términos)
 ================================================================ */
 .legal-page {
-  padding: calc(var(--nav-h) + 64px) 0 96px;
+  padding: calc(var(--nav-h) + var(--nav-top) + 40px) 0 96px;
 }
 .legal-container {
   max-width: 720px;
